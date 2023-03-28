@@ -1,9 +1,12 @@
-import MyTitle from "./components/MyTitle";
+import MyTitle from "./components/MyTitle.jsx";
+import MyPokemonCards from "./components/PokemonCards.jsx";
+import "./App.css";
 
 function App() {
   return (
     <div>
-      <h1>Hello React</h1>
+      <MyTitle />
+      <MyPokemonCards />
     </div>
   );
 }
