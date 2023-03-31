@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 
 function MyPokemonCards({pokemon}) {
- 
   return (
     <figure>
       {pokemon.imgSrc ? <img src={pokemon.imgSrc} alt={pokemon.name} /> : <p>???</p>}
@@ -12,8 +11,8 @@ function MyPokemonCards({pokemon}) {
 
 MyPokemonCards.propTypes = {
   pokemon: PropTypes.shape({
-    name : PropTypes.string.isRequired,
-    imgSrc: PropTypes.string.isRequired,
+  name : PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
   }).isReqsuired,
 }
 
